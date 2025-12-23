@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NoteVell 📝
 
-## Getting Started
+> A modern, full-stack note-taking application built for speed, simplicity, and efficiency.
 
-First, run the development server:
+![Project Status](https://img.shields.io/badge/Status-Active-success)
+![License](https://img.shields.io/badge/License-MIT-blue)
+![Tech](https://img.shields.io/badge/Built%20With-Next.js-black)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 Introduction
+
+**NoteVell** is a robust note-taking platform designed to help users organize their thoughts seamlessly. Built with the latest web technologies, it offers a clean interface and fast performance.
+
+## 🛠️ Tech Stack
+
+* **Framework:** [Next.js 16](https://nextjs.org/) (App Router)
+* **Language:** [TypeScript](https://www.typescriptlang.org/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Database ORM:** [Prisma](https://www.prisma.io/)
+* **UI Components:** Shadcn UI
+* **Package Manager:** NPM
+
+## ✨ Key Features
+
+* **Create, Read, Update, Delete (CRUD):** Full management of notes.
+* **Ask AI:** Ask AI anything about your notes.
+* **Responsive Design:** Works seamlessly on desktop and mobile.
+* **Modern UI:** Clean aesthetics powered by Tailwind and Shadcn.
+* **Type Safety:** robust code quality with TypeScript.
+* **Dark Mode:** you can view the webpage in dark mode.
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+### Prerequisites
+
+* Node.js (v18 or higher)
+* npm or yarn
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/YOUR_USERNAME/NoteVell.git](https://github.com/YOUR_USERNAME/NoteVell.git)
+    cd NoteVell
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Set up Environment Variables**
+    Create a `.env` file in the root directory. You can use `.env.example` as a reference if available.
+    ```bash
+    DATABASE_URL="file:./dev.db"  # Or your PostgreSQL/MongoDB URL
+    ```
+
+4.  **Initialize the Database**
+    ```bash
+    npx prisma generate
+    npx prisma db push
+    ```
+
+5.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+NoteVell/
+├── src/
+│   ├── app/       # Next.js App Router pages
+│   ├── components/# Reusable UI components
+│   └── lib/       # Utility functions and Prisma client
+├── prisma/        # Database schema
+├── public/        # Static assets
+└── ...config files
