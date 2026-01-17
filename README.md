@@ -41,7 +41,7 @@ Follow these steps to run the project locally.
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/NoteVell.git](https://github.com/YOUR_USERNAME/NoteVell.git)
+    git clone [https://github.com/Krishna-1107//NoteVell.git](https://github.com/Krishna-1107/NoteVell.git)
     cd NoteVell
     ```
 
